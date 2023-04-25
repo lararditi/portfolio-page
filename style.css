@@ -1,24 +1,88 @@
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . ."
-      "core-1 core-2 core-3 . . ."
-      "lab-1 lab-2 lab-3 lab-4 lab-5 lab-6"
-      "type-1 type-2 type-3 . . ."
-      ". . . . . ."
-      ". . . . . .";
+body{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  display: grid;
+  padding: 2px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem; 
+  grid-auto-flow:column;  
+}
+
+
+.info {
+  display: none;
+}
+
+.about:hover + .info {
+  display: block;
+  font-size: 13px;
+  background-color: rgba(243, 243, 243, 0.478);
+  --tw-backdrop-blur: blur(20px);
+  position: absolute;
+  z-index: 2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(186px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(186px, 1fr));
+  gap: 0px 0px;
+  grid-row-gap: 1em;
+  grid-column-gap: 1em;
+}
+
+
+.core-1{
+  display: block;
+  grid-column: span 1;
+  width: 10vw;
+  height: fit-content;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
   }
-  
-  .core-1 { grid-area: core-1;}
-  
-  .core-2 { grid-area: core-2; }
-  
-  .core-3 { grid-area: core-3; }
-  
-  .core-4 { grid-area: core-4; }
-  
-  .core-5 { grid-area: core-5; }
-  
+  100% {
+      opacity: 1;
+   }
+}
+
+#modal {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: white;
+  display: none;
+}
+.core-1 { 
+  position:relative; 
+  width: fit-content;
+  height: fit-content; 
+}
+.core-1 a span { 
+  position:absolute; 
+  display:none; 
+  z-index:99;
+  left:50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.core-1 a:hover span { 
+  display:block;
+}
+
+#modal > img{
+  padding: 10px;
+  width: 45%;
+}
