@@ -57,7 +57,8 @@ body{
 #modal {
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: fixed;
+  /* position: absolute; */
   top: 0;
   left: 0;
   z-index: 5;
@@ -83,6 +84,21 @@ body{
 }
 
 #modal > img{
-  padding: 10px;
-  width: 45%;
+  padding: 15px;
+  width: 95%;
+  text-align: center;
+}
+
+#modal > icon{
+  /* padding: 15px;
+  width: 95%;
+  text-align: center; */
+
+  display: grid;
+  grid-column: span 1;
+  width: 10vw;
+  height: fit-content;
+  animation: fadeInAnimation ease 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; 
 }

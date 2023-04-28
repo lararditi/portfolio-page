@@ -4,14 +4,14 @@ const modalContentData = [
     {
         title: "KOSHER NYC",
         description: "A hypothetical exhibition/food tour which uses New York city as its space which takes inspiration in its form from the grid maps apps are built on. ",
-        img: ['onemap.jpg', 'frontback.jpg', 'two.jpg', 'three.jpg'],
-        icon: ['./portforlio-page/porkosher.png']
+        img: ['onemap.jpg', 'frontback-3.png', 'twomap.jpg', 'threemap.jpg'],
+        icon: ['kosher.png']
     },
     {
         title: "HOME",
         description: "This booklet draws the relationship between the dimensions the word “home” is expressed in - the visual symbols we universally use to demonstrate “home”, the spaces we call “home” and what alternatives to what “home” can be to individuals. This is not only expressed through the content but also literally expressed through the use of a changing grid in the background of each section.",
-        img: ['h.jpg', 'home.jpg', 'home-1.jpg', 'home-2.jpg', 'home-3.jpg', 'home4.jpg'],
-        icon: ['']
+        img: ['h.png', 'home-1.png', 'home-2.png', 'home-3.png', 'home4.png'],
+        icon: ['h.png']
     },
     {
         title: "ELEMENTS OF THE PERIODIC TABLE",
@@ -21,21 +21,21 @@ const modalContentData = [
     },
     {
         title: "FRUIT STICKERS",
-        description: "This website's purpose is to explore using API keys and filter a collection of fruit sticker based on companies' ethics: url.",
-        img: ['periodic-table.jpg'],
+        description: "This website's purpose is to explore using API keys and filter a collection of fruit sticker based on companies' ethics. <br> Click on link for website: ",
+        img: ['fruit.png'],
         icon: ['']
     },
 
     {
         title: "TUNNEL",
-        description: "This website is constructed to create a narrative by using multiple platforms.",
-        img: ['./periodic-table.jpg'],
-        icon: ['kosher.png']
+        description: "This website is constructed to create a narrative by using multiple platforms. <br> Click on link for website: ",
+        img: ['sketch-tunnel.png'],
+        icon: ['']
     },
     {
         title: "NYC FOODSCRAP DROPOFF LOCATIONS",
-        description: "This site showcases information from NYC Open Data and is made to learn the basics of JavaScript. The user can see the density of food scrap dropoff locations as it it is displayed by using a grayscale and can get more information on the adress through interaction.",
-        img: ['hero.jpg', 'blue.jpg'],
+        description: "This site showcases information from NYC Open Data and is made to learn the basics of JavaScript. The user can see the density of food scrap dropoff locations as it it is displayed by using a grayscale and can get more information on the adress through interaction. <br> Click on link for website: ",
+        img: ['fooddrop.png'],
         icon: ['']
     },
 
@@ -48,7 +48,7 @@ for (let projectCount = 0; projectCount < totalProjectCount; projectCount++) {
     let currentDiv = document.createElement('div');
     currentDiv.id = `project${projectCount}`;
     currentDiv.dataset.number = projectCount
-    currentDiv.innerHTML = `<div class="core-1"> <img data-number="${projectCount}" src="${modalContentData[projectCount].img}"> </div>`
+    currentDiv.innerHTML = `<div class="core-1"> <img data-number="${projectCount}" src="${modalContentData[projectCount].icon}"> </div>`
     projectContainer.appendChild(currentDiv);
     currentDiv.addEventListener('click', function(event) {
         let selectedProject = event.target.getAttribute('data-number')
