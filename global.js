@@ -37,11 +37,45 @@ const modalContentData = [
         description: "This site showcases information from NYC Open Data and is made to learn the basics of JavaScript. The user can see the density of food scrap dropoff locations as it it is displayed by using a grayscale and can get more information on the adress through interaction. <br> Click on link for website: ",
         img: ['fooddrop.png'],
         icon: ['fooddrop.png']
-    }
+    },
 
+    {
+        title: "VISUAL CONVERSATION",
+        description: "https://lararditi.github.io/core2-lab-convo/",
+        img: ['convo.png'],
+        icon: ['convo.png']
+    },
+
+    {
+        title: "FILM STRIP",
+        description: "https://lararditi.github.io/core2-lab-filmstrip/",
+        img: ['dorothy.png'],
+        icon: ['dorothy.png']
+    },
+
+    {
+        title: "MEDIA TUNNEL",
+        description: "https://lararditi.github.io/bubblegum/",
+        img: ['bubblegum.png'],
+        icon: ['bubblegum.png']
+    },
+    
+    {
+        title: "JSON DATA",
+        description: "https://lararditi.github.io/bubblegum/",
+        img: ['json.png'],
+        icon: ['json.png']
+    },
+
+    {
+        title: "ARENA BLOCK",
+        description: "https://lararditi.github.io/bubblegum/",
+        img: ['arena.png'],
+        icon: ['arena.png']
+    }
 ]
 
-let totalProjectCount = 6
+let totalProjectCount = 11
 let projectContainer = document.getElementById('project-container')
 let modal = document.getElementById('modal');
 for (let projectCount = 0; projectCount < totalProjectCount; projectCount++) {
