@@ -16,12 +16,11 @@ body{
   display: none;
 }
 
-.about:hover + .info {
+.about:hover .info {
   display: block;
   font-size: 13px;
   background-color: rgba(243, 243, 243, 0.478);
   --tw-backdrop-blur: blur(20px);
-  position: absolute;
   z-index: 2;
 }
 
