@@ -96,10 +96,7 @@ let closeButton = document.querySelector("#closeButton")
 function renderModal(clickedProject, selectedProject) {
     console.log(clickedProject,selectedProject);
     modal.innerHTML = `
-    <div class="about">${clickedProject.title}</div>
-    <div class="info">${clickedProject.description}</div>
-    
-    
+    <div class="about"><h1>${clickedProject.title}</h1><div class="info">${clickedProject.description}</div></div>
     `
     for (image of clickedProject.img) {
         let currentImage = `
