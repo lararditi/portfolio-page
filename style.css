@@ -16,7 +16,7 @@ body{
   display: none;
 }
 
-.about:hover .info {
+.about h1:hover .info {
   display: block;
   font-size: 13px;
   background-color: rgba(243, 243, 243, 0.478);
@@ -135,8 +135,4 @@ button {
   font-family: Arial, Helvetica, sans-serif;
   font-style: bold;
   font-size: 13px;
-}
-
-.title h1{
-
 }
