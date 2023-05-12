@@ -16,7 +16,7 @@ body{
   display: none;
 }
 
-.about h1:hover .info {
+.about :hover .info {
   display: block;
   font-size: 13px;
   background-color: rgba(243, 243, 243, 0.478);
